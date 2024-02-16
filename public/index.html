@@ -5,35 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Platzi Travel</title>
     <link rel="stylesheet" href="./css/tailwind.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="w-64 bg-red-500 flex">
-        <div class="w-10 h-px bg-blue-100">
-            <p class="text-center text-xs">Hello World</p>
+    <!-- <div class="w-96 h-96 bg-gray-100 p-10 m-10 flex flex-col space-y-4 justify-center items-center">
+        <div class="w-80 h-16 bg-blue-100">
+            <p class="text-center ">Hello World</p>
         </div>
-        <div class="w-10 h-32 bg-blue-200">
+        <div class="w-80 h-16 bg-blue-200">
             <p class="text-center">Hello World</p>
         </div>
-        <div class="w-10 h-32 bg-blue-300">
+        <div class="w-80 h-16 bg-blue-300">
             <p class="text-center">Hello World</p>
         </div>
-        <div class="w-10 h-32 bg-blue-400">
-            <p class="text-center">Hello World</p>
+        <div class="w-80 h-16 bg-blue-400">
+            <p class="text-center font-Montserrat text-xl">Hello World</p>
         </div>
-        <div class="w-10 h-32 bg-blue-500">
-            <p class="text-center">Hello World</p>
+    </div> -->
+    <nav></nav>
+    <div id="tab_bar"></div>
+    <section class="w-full h-screen">
+        <div id="home" >
+            <div class="w-full h-3/4">
+                <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center">
+                    <input type="search" name="" id="" class="outline-none p-3 rounded-full shadow-sm" placeholder="San Francisco">
+                    <button class="w-36 rounded-full text-xl text-primary shadow-sm font-semibold p-4 bg-white ">
+                        Explorar
+                    </button>
+                </div>
+                <div class="w-full h-full">
+                    <img src="./img/sanFrancisco.jpg" alt="">
+                </div>
+                
+            </div>
         </div>
-        <div class="w-10 h-32 bg-blue-600">
-            <p class="text-center">Hello World</p>
-        </div>
-        <div class="w-10 h-32 bg-blue-700">
-            <p class="text-center text">Hello World</p>
-        </div>
-        <div class="w-10 h-32 bg-blue-800">
-            <p class="text-center">Hello World</p>
-        </div>
-    </div>
-    
-    
+        <div id="recomendadas" ></div>
+        <div id="rentas_destacadas" ></div>
+    </section>
+
+
 </body>
 </html>
