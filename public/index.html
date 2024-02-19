@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="font-Montserrat">
     <!-- <div class="w-96 h-96 bg-gray-100 p-10 m-10 flex flex-col space-y-4 justify-center items-center">
         <div class="w-80 h-16 bg-blue-100">
             <p class="text-center ">Hello World</p>
@@ -30,8 +30,10 @@
         <div id="home" >
             <div class="w-full h-3/4">
                 <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center">
-                    <input type="search" name="" id="" class="outline-none p-3 rounded-full shadow-sm" placeholder="San Francisco">
-                    <button class="w-36 rounded-full text-xl text-primary shadow-sm font-semibold p-4 bg-white ">
+                    <input type="search" name="" id="" class="outline-none p-3 rounded-full shadow-sm transition duration-500  focus-within:shadow-sm focus:ring-2 focus:w-11/12" placeholder="San Francisco">
+                    <button class="w-48 rounded-full text-lg text-primary shadow-sm font-semibold p-4 bg-white 
+                        transition duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:-translate-y-1 hover:scale-110"
+                    >
                         Explorar
                     </button>
                 </div>
@@ -43,7 +45,7 @@
         </div>
         <div class="p-6" id="recomendadas" >
             <p class="text-3xl font-semibold text-primary"> Recomendados </p>
-            <div class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-4">
+            <div class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6 overflow-y-hidden">
                 <div class="Card">
                     <div class="w-full h-3/5 bg-norway bg-cover rounded-t-lg"></div>
                     <div class="w-full h-2/5 bg-secundary rounded-b-lg">
@@ -95,7 +97,75 @@
             </div>
             
         </div>
-        <div id="rentas_destacadas" ></div>
+        <div class="px-2 h-full w-full   pb-20" id="rentas_destacadas" >
+            <p class="text-3xl text-primary font-semibold pb-6 mt-2"> Rentas Destacadas</p>
+            <div class="w-full h-full flex flex-col space-y-2 items-center justify-center  ">
+
+                <div class="w-full h-52 bg-chicago bg-cover rounded-xl">
+                    <p class="CardTitle"> Chicago </p>
+                    <p class="text-sm pl-8 text-black mr-24"> 2 habitaciones, baño y cocina </p>
+                </div>
+    
+                <div class="w-full h-52 bg-bali bg-cover rounded-xl">
+                    <p class="CardTitle"> Bali </p>
+                    <p class="text-sm pl-8 text-black mr-24"> 1 habitaciones, baño y cocina </p>
+                </div>
+
+                <div class="w-full h-52 bg-new_york bg-cover rounded-xl">
+                    <p class="CardTitle"> New York </p>
+                    <p class="text-sm pl-8 text-black mr-24"> 1 habitaciones, baño y cocina </p>
+                </div>
+
+                <div class="w-full h-52 bg-yosemite bg-cover rounded-xl">
+                    <p class="CardTitle"> Yosemite </p>
+                    <p class="text-sm pl-8 text-black mr-24"> 2 habitaciones, baño y cocina </p>
+                </div>
+                
+
+            </div>
+        </div>
+
+        <div class="w-full   pb-8" id="faqs">
+            <div class="w-full h-full px-6 flex flex-col space-y-4">
+                <p class="text-3xl text-primary font-semibold mt-6">FAQs</p>
+
+                <div>
+                    <p class="text-xl font-medium text-primary">Politica de Cancelacion</p>
+                    <p class="text-md pt-2">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, vel, 
+                        impedit voluptatum debitis sed molestias quo cum laborum, soluta eveniet 
+                        fugiat dicta quasi harum fugit. Expedita consequuntur inventore quae in!
+                    </p>
+                </div>
+
+                <div>
+                    <p class="text-xl font-medium text-primary">Politica de Cancelacion</p>
+                    <p class="text-md pt-2">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, vel, 
+                        impedit voluptatum debitis sed molestias quo cum laborum, soluta eveniet 
+                        fugiat dicta quasi harum fugit. Expedita consequuntur inventore quae in!
+                    </p>
+                </div>
+
+                <div>
+                    <p class="text-xl font-medium text-primary">Politica de Cancelacion</p>
+                    <p class="text-md pt-2">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, vel, 
+                        impedit voluptatum debitis sed molestias quo cum laborum, soluta eveniet 
+                        fugiat dicta quasi harum fugit. Expedita consequuntur inventore quae in!
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <footer class="w-full h-64 bg-gray-50 p-6 space-y-4">
+            <p class="text-lg">Acerca de</p>
+            <p class="text-sm text-gray-300">Empleos</p>
+            <p class="text-sm text-gray-300">Términos</p>
+            <p class="text-sm text-gray-300">Platzi Travel</p>
+
+        </footer>
     </section>
 
 
